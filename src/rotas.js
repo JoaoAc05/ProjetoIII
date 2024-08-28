@@ -10,6 +10,7 @@ rota.get('/', (req, res) => {
     });
 });
 
+//ROTAS
 rota.get('/alunos', selectAlunos);
 rota.get('/aluno', selectAluno);
 rota.post('/aluno', insertAluno);
