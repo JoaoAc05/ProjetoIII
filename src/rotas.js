@@ -1,5 +1,5 @@
 import { Router } from "express";
-import  createTable, { insertAluno, updateAluno, selectAlunos, selectAluno, deleteAluno } from './Controler/aluno.js';
+import  createTable, { insertAluno, updateAluno, selectAlunos, selectAluno, deleteAluno } from './Controler/Aluno.js';
 
 const rota = Router();
 
