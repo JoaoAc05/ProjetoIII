@@ -1,9 +1,14 @@
-import sqlite3 from 'sqlite3'
-import { open } from 'sqlite'
+import pg from 'pg';
 
-export async function openDb () {
-    return open({
-        filename: './database.db',
-        driver: sqlite3.Database
-    })
+const { Pool } = pg;
+
+const pool = new Pool({
+  user: 'default',
+  host: 'ep-wispy-truth-a4sikjb9-pooler.us-east-1.aws.neon.tech',
+  database: 'verceldb',
+  password: 'x9aXPO8VqCbz',
+  port: 5432,
+  ssl: {
+    rejectUnauthorized: false
 }
+});

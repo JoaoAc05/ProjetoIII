@@ -11,8 +11,8 @@ rota.get('/', (req, res) => {
 });
 
 //ROTAS
-rota.get('/alunos', selectAlunos);
-rota.get('/aluno', selectAluno);
+rota.get('/alunos', selectAlunos); // get all - todos alunos cadastrados
+rota.get('/aluno/:id', selectAluno);
 rota.post('/aluno', insertAluno);
 rota.put('/aluno', updateAluno);
 rota.delete('/aluno', deleteAluno);
