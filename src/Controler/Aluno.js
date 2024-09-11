@@ -5,9 +5,9 @@ const { Pool } = pg;
 
 const pool = new Pool({
     user: 'default',
-    host: 'ep-wispy-truth-a4sikjb9-pooler.us-east-1.aws.neon.tech',
+    host: 'ep-little-wind-a4r13s63-pooler.us-east-1.aws.neon.tech',
     database: 'verceldb',
-    password: 'x9aXPO8VqCbz',
+    password: 'LBEKT0cQIW8h',
     port: 5432,
   ssl: {
     rejectUnauthorized: false
