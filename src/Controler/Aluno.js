@@ -15,7 +15,7 @@ const pool = new Pool({
 });
 
 export default async function createTable(){
-    const result = await pool.query('CREATE TABLE IF NOT EXISTS Aluno (indice INTEGER PRIMARY KEY, nome TEXT, ra TEXT, cpf TEXT)');
+    const result = await pool.query('CREATE TABLE IF NOT EXISTS Aluno (indice SERIAL PRIMARY KEY, nome TEXT, ra TEXT, cpf TEXT)');
 }
 
 export async function selectAlunos(req, res){
